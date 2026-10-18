@@ -33,6 +33,9 @@ local function setup_keymaps()
   vim.g.neovide_scroll_animation_far_lines = 1
   vim.g.neovide_scroll_animation_length = 0.10
 
+  -- window
+  vim.g.neovide_window_blurred = false
+
   -- ⌘C, ⌘X, ⌘V
   vim.keymap.set("n", "<D-c>", '"+yy', { desc = "⌘C = Copy line to clipboard" })
   vim.keymap.set("v", "<D-c>", '"+y', { desc = "⌘C = Copy to clipboard" })
